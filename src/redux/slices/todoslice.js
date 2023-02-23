@@ -28,7 +28,6 @@ const todoSlice = createSlice({
     builder.addCase(fetchtodo.fulfilled, (state, action) => {
       state.isLoading = false;
       state.data = action.payload;
-      // console.log(action.payload)
     });
 
     builder.addCase(fetchtodo.rejected, (state, action) => {
